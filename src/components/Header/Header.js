@@ -29,10 +29,7 @@ function Header() {
 
         } catch (e) {
             console.log(e);
-
         }
-
-
 
     }
 
@@ -40,7 +37,9 @@ function Header() {
         <div className="header">
             <h3 className="app-name">Popupsmart React Practicum Todo App</h3>
             {username ?  <h3 className="username">Welcome {username}</h3> :
-                <div className="usernameInput"><input ref={userNameInputRef} type="text" value={username}  />
+                <div className="usernameInput">
+                    <label>Username: </label>
+                    <input ref={userNameInputRef} type="text" value={username}  />
                     <button type="submit" onClick={usernameSubmit}>Submit</button>
                 </div>}
 
