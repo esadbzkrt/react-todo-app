@@ -8,6 +8,8 @@
   outline: 0;
 }
 
+
+
 .todo {
   display: flex;
   justify-content: space-around;
@@ -33,25 +35,33 @@
     background: transparent;
     margin-right: 20px;
     padding: 6px 0 6px;
-    border-bottom: 1px solid #2f3336;
     flex:1;
     &:focus{
       border-color: #4e555a;
+      padding: 8px;
       &::placeholder {
         color: transparent;
+        padding: 8px;
       }
     }
   }
   button{
+    background: #4e555a;
     margin-right: 20px;
     width: 100px;
     height: 30px;
     border-radius: 3px;
     font-size: 16px;
-    color: black;
+    color: white;
     cursor: pointer;
     font-weight: 500;
 
+  }
+
+  button:disabled{
+    background: rgba(78, 85, 90, 0.2);
+    color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
   }
 
 }

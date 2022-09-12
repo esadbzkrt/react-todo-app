@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<TodoList/>}/>
                     <Route path="/updateTodo/:id"/>
-                    <Route path="/Todos/:id"/>
+                    <Route path="/todos/:id"/>
                 </Routes>
             </Router>
         </div>
